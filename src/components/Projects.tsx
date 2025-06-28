@@ -1,0 +1,163 @@
+
+import React from 'react';
+import { Github, ArrowUp } from 'lucide-react';
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "Fairness Unveiled",
+      type: "AI Fairness Analysis Tool",
+      description: "An analytical tool to assess and visualize bias in ML models using ROUGE metrics. Delivers interactive dashboards for transparent evaluation and includes bias mitigation insights.",
+      techStack: ["Python", "Pandas", "Scikit-learn", "Plotly"],
+      role: "Lead developer and documentation author",
+      highlights: ["Automated fairness audits", "Visual evaluation dashboards"],
+      github: "#",
+      gradient: "from-blue-500 to-cyan-500"
+    },
+    {
+      title: "Career Canvas Smart Build",
+      type: "AI Career Assistant",
+      description: "A full-stack AI tool that matches CVs to job descriptions, identifies skill gaps, and recommends personalized upskilling paths.",
+      techStack: ["Streamlit", "Supabase", "OpenAI API", "LangChain"],
+      role: "Backend integrator and prompt engineer",
+      highlights: ["Intelligent resume parsing", "Job-role matching logic"],
+      github: "#",
+      gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "Machine Daily Check Prototype",
+      type: "UX/UI Prototype",
+      description: "A mobile-friendly prototype designed to streamline machine maintenance checks in industrial settings.",
+      techStack: ["Figma"],
+      role: "UX Designer",
+      highlights: ["Tablet-first interface", "Intuitive form flow"],
+      github: "#",
+      figma: "#",
+      gradient: "from-green-500 to-teal-500"
+    },
+    {
+      title: "Flowise AI Career Chatbot",
+      type: "No-Code AI Chatbot",
+      description: "Built with Flowise and OpenAI to provide interactive career advice using a vector search-powered knowledge base.",
+      techStack: ["Flowise", "Supabase", "OpenAI API"],
+      role: "Bot builder and knowledge base creator",
+      highlights: ["Personalized Q&A", "Embedded career resources"],
+      github: "#",
+      demo: "#",
+      gradient: "from-orange-500 to-red-500"
+    },
+    {
+      title: "Botpress Career Guidance Bot",
+      type: "AI-Powered Multilingual Chatbot",
+      description: "An AI chatbot built with Botpress to deliver multilingual career guidance and upskilling suggestions through smart conversation flows.",
+      techStack: ["Botpress", "NLP"],
+      role: "Flow developer and content designer",
+      highlights: ["Multilingual support", "Guided interaction logic"],
+      github: "#",
+      demo: "#",
+      gradient: "from-indigo-500 to-purple-500"
+    }
+  ];
+
+  return (
+    <section id="projects" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            A showcase of AI/ML projects demonstrating ethical development and human-centered design
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+            >
+              <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
+              
+              <div className="p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm text-blue-600 font-semibold">
+                      {project.type}
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-900 mb-2">Tech Stack:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {project.techStack.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <h4 className="text-sm font-semibold text-gray-900 mb-1">Role:</h4>
+                  <p className="text-sm text-gray-600">{project.role}</p>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="text-sm font-semibold text-gray-900 mb-2">Key Highlights:</h4>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    {project.highlights.map((highlight, highlightIndex) => (
+                      <li key={highlightIndex} className="flex items-center">
+                        <div className="w-1 h-1 bg-blue-600 rounded-full mr-2"></div>
+                        {highlight}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="flex gap-3">
+                  <a
+                    href={project.github}
+                    className="flex items-center px-4 py-2 bg-gray-900 text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+                  >
+                    <Github size={16} className="mr-2" />
+                    GitHub
+                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+                    >
+                      <ArrowUp size={16} className="mr-2" />
+                      Live Demo
+                    </a>
+                  )}
+                  {project.figma && (
+                    <a
+                      href={project.figma}
+                      className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg text-sm font-medium hover:bg-purple-700 transition-colors"
+                    >
+                      Figma
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
