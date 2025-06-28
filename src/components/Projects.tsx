@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, ExternalLink, Play } from 'lucide-react';
 
@@ -12,6 +11,7 @@ const Projects = () => {
       role: "Lead developer and documentation author",
       highlights: ["Automated fairness audits", "Visual evaluation dashboards", "Bias mitigation insights"],
       github: "https://github.com/Sanelise01/fairness-unveiled",
+      demo: "https://lovable.dev/projects/64f0b266-2177-4e9a-a88d-168e551e5d8a",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
@@ -22,7 +22,7 @@ const Projects = () => {
       role: "Backend integrator and prompt engineer",
       highlights: ["Intelligent resume parsing", "Job-role matching logic", "Personalized recommendations"],
       github: "https://github.com/Sanelise01/career-canvas",
-      demo: "https://career-canvas-demo.streamlit.app",
+      demo: "https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8",
       gradient: "from-purple-500 to-pink-500"
     },
     {
@@ -33,7 +33,7 @@ const Projects = () => {
       role: "Bot builder and knowledge base creator",
       highlights: ["Vector search integration", "Interactive Q&A", "Career resource embedding"],
       github: "https://github.com/Sanelise01/flowise-career-bot",
-      demo: "https://career-bot.flowise.ai",
+      demo: "https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299",
       gradient: "from-orange-500 to-red-500"
     },
     {
@@ -44,7 +44,7 @@ const Projects = () => {
       role: "Flow developer and content designer",
       highlights: ["Multilingual support", "Smart conversation flows", "Guided interaction logic"],
       github: "https://github.com/Sanelise01/botpress-career-bot",
-      demo: "https://career-guidance.botpress.app",
+      demo: "https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/15/16/20250515163158-SRH17U8B.json",
       gradient: "from-indigo-500 to-purple-500"
     },
     {
@@ -54,7 +54,7 @@ const Projects = () => {
       techStack: ["Figma", "UX Design", "Prototyping"],
       role: "UX Designer",
       highlights: ["Tablet-first interface", "Intuitive form flow", "Industrial workflow optimization"],
-      figma: "https://figma.com/machine-daily-check",
+      figma: "https://www.figma.com/design/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=0-1&t=ufs9Mixi9sVXKtXi-1",
       gradient: "from-green-500 to-teal-500"
     }
   ];
