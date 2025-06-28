@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -15,8 +15,15 @@ const Hero = () => {
         <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-6">
+      <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="space-y-8">
+          <div className="mb-6">
+            <div className="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 px-4 py-2 rounded-full text-blue-800 font-medium mb-4">
+              <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+              Available for AI/ML Opportunities
+            </div>
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
             <span className="block">Sanelise</span>
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -24,28 +31,57 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Psychology Graduate & AI/ML Practitioner
+          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-semibold">
+            AI/ML Engineer • Psychology Graduate • Ethical AI Advocate
           </p>
           
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            Bridging human understanding with emerging technologies to build 
-            <span className="font-semibold text-blue-600"> ethical, human-centered AI solutions</span>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            Combining human-centered psychology with cutting-edge AI to build 
+            <span className="font-semibold text-blue-600"> ethical, scalable solutions</span> that solve real-world problems.
+            <br />
+            <span className="text-blue-600 font-medium">5 production-ready AI projects • 2 live chatbots • Ready to contribute from day one</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <a
               href="#projects"
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
+              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
             >
-              View My Work
+              View Portfolio Projects
             </a>
             <a
               href="#contact"
-              className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-200"
+              className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-200 text-lg"
             >
-              Get In Touch
+              Let's Connect
             </a>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              className="flex items-center px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition-colors"
+            >
+              <Download size={18} className="mr-2" />
+              Download Resume
+            </a>
+          </div>
+
+          {/* Key achievements */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 max-w-4xl mx-auto">
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">
+              <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
+              <div className="text-gray-700 font-medium">AI/ML Projects Deployed</div>
+              <div className="text-sm text-gray-500">Production-ready applications</div>
+            </div>
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">
+              <div className="text-3xl font-bold text-purple-600 mb-2">100%</div>
+              <div className="text-gray-700 font-medium">Ethical AI Focus</div>
+              <div className="text-sm text-gray-500">Human-centered design approach</div>
+            </div>
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">
+              <div className="text-3xl font-bold text-green-600 mb-2">2</div>
+              <div className="text-gray-700 font-medium">Live AI Chatbots</div>
+              <div className="text-sm text-gray-500">Serving real users daily</div>
+            </div>
           </div>
         </div>
 
