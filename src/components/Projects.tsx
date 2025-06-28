@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Github, ExternalLink, Play } from 'lucide-react';
 
@@ -44,7 +45,7 @@ const Projects = () => {
       role: "Flow developer and content designer",
       highlights: ["Multilingual support", "Smart conversation flows", "Guided interaction logic"],
       github: "https://github.com/Sanelise01/botpress-career-bot",
-      demo: "https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/15/16/20250515163158-SRH17U8B.json",
+      demo: "https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json",
       gradient: "from-indigo-500 to-purple-500"
     },
     {
@@ -54,7 +55,7 @@ const Projects = () => {
       techStack: ["Figma", "UX Design", "Prototyping"],
       role: "UX Designer",
       highlights: ["Tablet-first interface", "Intuitive form flow", "Industrial workflow optimization"],
-      figma: "https://www.figma.com/design/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=0-1&t=ufs9Mixi9sVXKtXi-1",
+      figma: "https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3",
       gradient: "from-green-500 to-teal-500"
     }
   ];
