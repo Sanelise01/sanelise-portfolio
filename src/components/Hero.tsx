@@ -1,90 +1,148 @@
 
 import React from 'react';
-import { ArrowDown, Download } from 'lucide-react';
+import { ArrowDown, Download, Camera } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
-      
-      {/* Animated background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
+    <section id="home" className="min-h-screen relative overflow-hidden">
+      {/* Cover Photo Section */}
+      <div className="absolute inset-0 h-96">
+        <div className="w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 relative">
+          {/* Placeholder for cover photo - can be replaced with actual image */}
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
+          
+          {/* Optional: Add cover photo upload area */}
+          <div className="absolute top-4 right-4">
+            <button className="flex items-center px-3 py-2 bg-white/20 backdrop-blur-sm text-white rounded-lg text-sm hover:bg-white/30 transition-colors">
+              <Camera size={16} className="mr-2" />
+              Add Cover Photo
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-8">
+      {/* Main Content */}
+      <div className="relative z-10 pt-32 pb-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* Profile Photo */}
-          <div className="flex justify-center mb-8">
-            <div className="relative">
-              <img
-                src="/lovable-uploads/bd4ac92e-4412-45cf-a659-a594f411cb1f.png"
-                alt="Sanelise Matanzima"
-                className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-xl"
-              />
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
+          {/* Profile Section */}
+          <div className="text-center mb-16">
+            {/* Profile Photo */}
+            <div className="flex justify-center mb-8">
+              <div className="relative">
+                <div className="w-40 h-40 rounded-full bg-white p-1 shadow-2xl">
+                  <img
+                    src="/lovable-uploads/bd4ac92e-4412-45cf-a659-a594f411cb1f.png"
+                    alt="Sanelise Matanzima"
+                    className="w-full h-full rounded-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
+              </div>
+            </div>
+
+            {/* Name and Title */}
+            <div className="space-y-6">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+                <span className="block">Sanelise</span>
+                <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                  Matanzima
+                </span>
+              </h1>
+              
+              <div className="space-y-4">
+                <p className="text-xl md:text-2xl text-gray-700 font-medium">
+                  Psychology Graduate • AI/ML Practitioner • Building Ethical Solutions
+                </p>
+                
+                <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                  A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. 
+                  Dedicated to building ethical, human-centered solutions through intelligent design.
+                </p>
+              </div>
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-            <span className="block">Sanelise</span>
-            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Matanzima
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Psychology Graduate • AI/ML Practitioner • Building Ethical Solutions
-          </p>
-          
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. 
-            Dedicated to building ethical, human-centered solutions through intelligent design.
-          </p>
-
-          {/* Resume Section */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 max-w-md mx-auto border border-gray-200 shadow-lg">
-            <div className="flex items-center justify-center mb-4">
-              <span className="text-2xl mr-2">📄</span>
-              <h3 className="text-lg font-semibold text-gray-900">Resume</h3>
+          {/* Professional Cards Section */}
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            
+            {/* Resume Card */}
+            <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="text-center space-y-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto">
+                  <span className="text-2xl">📄</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Professional Resume</h3>
+                  <p className="text-gray-600 mb-6">Download my comprehensive CV showcasing experience and skills</p>
+                </div>
+                <a
+                  href="/SmartResume.pdf"
+                  download="SmartResume.pdf"
+                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
+                >
+                  <Download size={20} className="mr-3" />
+                  Download Resume
+                </a>
+              </div>
             </div>
-            <div className="flex items-center justify-center">
-              <span className="text-lg mr-2">📎</span>
+
+            {/* Quick Contact Card */}
+            <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="text-center space-y-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto">
+                  <span className="text-2xl">💬</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Let's Connect</h3>
+                  <p className="text-gray-600 mb-6">Ready to discuss opportunities and collaborations</p>
+                </div>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
+                >
+                  Get In Touch
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="text-center space-y-8">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a
-                href="/SmartResume.pdf"
-                download="SmartResume.pdf"
-                className="flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
+                href="#projects"
+                className="px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl font-bold hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 text-lg min-w-[200px]"
               >
-                <Download size={18} className="mr-2" />
-                Download My Resume (PDF)
+                View My Projects
+              </a>
+              <a
+                href="#about"
+                className="px-10 py-4 border-2 border-gray-300 text-gray-700 rounded-2xl font-bold hover:border-blue-600 hover:text-blue-600 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-lg min-w-[200px]"
+              >
+                Learn More About Me
               </a>
             </div>
-          </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <a
-              href="#projects"
-              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
-            >
-              View My Projects
-            </a>
-            <a
-              href="#contact"
-              className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-200 text-lg"
-            >
-              Get In Touch
-            </a>
+            {/* Scroll Indicator */}
+            <div className="pt-16">
+              <div className="flex flex-col items-center text-gray-400">
+                <p className="text-sm mb-2">Scroll to explore</p>
+                <div className="animate-bounce">
+                  <ArrowDown size={24} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="text-gray-400" size={24} />
-        </div>
+      {/* Decorative Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 left-10 w-32 h-32 bg-blue-300/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-3/4 right-10 w-40 h-40 bg-purple-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-pink-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }}></div>
       </div>
     </section>
   );
