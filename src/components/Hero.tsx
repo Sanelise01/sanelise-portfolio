@@ -4,15 +4,15 @@ import { ArrowDown, Download, Camera } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden">
+    <section id="home" className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#F9FAFB' }}>
       {/* Cover Photo Section */}
       <div className="absolute inset-0 h-96">
-        <div className="w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 relative">
-          {/* Placeholder for cover photo - can be replaced with actual image */}
-          <div className="absolute inset-0 bg-black/20"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
+        <div className="w-full h-full relative" style={{ backgroundColor: '#0D47A1' }}>
+          {/* Subtle gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/10 to-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/90"></div>
           
-          {/* Optional: Add cover photo upload area */}
+          {/* Cover photo upload area */}
           <div className="absolute top-4 right-4">
             <button className="flex items-center px-3 py-2 bg-white/20 backdrop-blur-sm text-white rounded-lg text-sm hover:bg-white/30 transition-colors">
               <Camera size={16} className="mr-2" />
@@ -38,25 +38,25 @@ const Hero = () => {
                     className="w-full h-full rounded-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full border-4 border-white" style={{ backgroundColor: '#00BFA6' }}></div>
               </div>
             </div>
 
             {/* Name and Title */}
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight" style={{ color: '#333333' }}>
                 <span className="block">Sanelise</span>
-                <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                <span className="block" style={{ color: '#0D47A1' }}>
                   Matanzima
                 </span>
               </h1>
               
               <div className="space-y-4">
-                <p className="text-xl md:text-2xl text-gray-700 font-medium">
+                <p className="text-xl md:text-2xl font-medium" style={{ color: '#B49789' }}>
                   IT Support Associate | Psychology Graduate | Emerging AI Innovator
                 </p>
                 
-                <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                <p className="text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: '#333333' }}>
                   A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. 
                   Dedicated to building ethical, human-centered solutions through intelligent design.
                 </p>
@@ -70,17 +70,18 @@ const Hero = () => {
             {/* Resume Card */}
             <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="text-center space-y-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto" style={{ backgroundColor: '#0D47A1' }}>
                   <span className="text-2xl">📄</span>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Professional Resume</h3>
-                  <p className="text-gray-600 mb-6">Download my comprehensive CV showcasing experience and skills</p>
+                  <h3 className="text-2xl font-bold mb-2" style={{ color: '#333333' }}>Professional Resume</h3>
+                  <p className="mb-6" style={{ color: '#333333' }}>Download my comprehensive CV showcasing experience and skills</p>
                 </div>
                 <a
                   href="/SmartResume.pdf"
                   download="SmartResume.pdf"
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
+                  className="inline-flex items-center px-8 py-4 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
+                  style={{ backgroundColor: '#0D47A1' }}
                 >
                   <Download size={20} className="mr-3" />
                   Download Resume
@@ -91,16 +92,17 @@ const Hero = () => {
             {/* Quick Contact Card */}
             <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="text-center space-y-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto" style={{ backgroundColor: '#00BFA6' }}>
                   <span className="text-2xl">💬</span>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Let's Connect</h3>
-                  <p className="text-gray-600 mb-6">Ready to discuss opportunities and collaborations</p>
+                  <h3 className="text-2xl font-bold mb-2" style={{ color: '#333333' }}>Let's Connect</h3>
+                  <p className="mb-6" style={{ color: '#333333' }}>Ready to discuss opportunities and collaborations</p>
                 </div>
                 <a
                   href="#contact"
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
+                  className="inline-flex items-center px-8 py-4 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
+                  style={{ backgroundColor: '#00BFA6' }}
                 >
                   Get In Touch
                 </a>
@@ -113,13 +115,26 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a
                 href="#projects"
-                className="px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl font-bold hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 text-lg min-w-[200px]"
+                className="px-10 py-4 text-white rounded-2xl font-bold hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 text-lg min-w-[200px]"
+                style={{ backgroundColor: '#0D47A1' }}
               >
                 View My Projects
               </a>
               <a
                 href="#about"
-                className="px-10 py-4 border-2 border-gray-300 text-gray-700 rounded-2xl font-bold hover:border-blue-600 hover:text-blue-600 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-lg min-w-[200px]"
+                className="px-10 py-4 border-2 rounded-2xl font-bold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-lg min-w-[200px]"
+                style={{ 
+                  borderColor: '#B49789', 
+                  color: '#B49789',
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.borderColor = '#00BFA6';
+                  e.target.style.color = '#00BFA6';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.borderColor = '#B49789';
+                  e.target.style.color = '#B49789';
+                }}
               >
                 Learn More About Me
               </a>
@@ -127,7 +142,7 @@ const Hero = () => {
 
             {/* Scroll Indicator */}
             <div className="pt-16">
-              <div className="flex flex-col items-center text-gray-400">
+              <div className="flex flex-col items-center" style={{ color: '#B49789' }}>
                 <p className="text-sm mb-2">Scroll to explore</p>
                 <div className="animate-bounce">
                   <ArrowDown size={24} />
@@ -140,9 +155,9 @@ const Hero = () => {
 
       {/* Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-10 w-32 h-32 bg-blue-300/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-3/4 right-10 w-40 h-40 bg-purple-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-pink-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/2 left-10 w-32 h-32 rounded-full blur-3xl animate-pulse" style={{ backgroundColor: '#0D47A1', opacity: 0.1 }}></div>
+        <div className="absolute top-3/4 right-10 w-40 h-40 rounded-full blur-3xl animate-pulse" style={{ backgroundColor: '#00BFA6', opacity: 0.1, animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 left-1/4 w-24 h-24 rounded-full blur-3xl animate-pulse" style={{ backgroundColor: '#B49789', opacity: 0.1, animationDelay: '4s' }}></div>
       </div>
     </section>
   );
