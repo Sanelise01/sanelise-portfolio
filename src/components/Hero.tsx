@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown, Download, Camera } from 'lucide-react';
 
@@ -53,7 +52,7 @@ const Hero = () => {
               
               <div className="space-y-4">
                 <p className="text-xl md:text-2xl text-gray-700 font-medium">
-                  Psychology Graduate • AI/ML Practitioner • Building Ethical Solutions
+                  IT Support Associate | Psychology Graduate | Emerging AI Innovator
                 </p>
                 
                 <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
