@@ -128,12 +128,14 @@ const Hero = () => {
                   color: '#B49789',
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.borderColor = '#00BFA6';
-                  e.target.style.color = '#00BFA6';
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = '#00BFA6';
+                  target.style.color = '#00BFA6';
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.borderColor = '#B49789';
-                  e.target.style.color = '#B49789';
+                  const target = e.target as HTMLElement;
+                  target.style.borderColor = '#B49789';
+                  target.style.color = '#B49789';
                 }}
               >
                 Learn More About Me
