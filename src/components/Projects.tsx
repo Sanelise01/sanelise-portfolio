@@ -17,11 +17,11 @@ const Projects = () => {
     },
     {
       title: "Career Canvas Smart Build",
-      type: "AI Career Assistant",
-      description: "A full-stack AI tool that matches CVs to job descriptions, identifies skill gaps, and recommends personalized upskilling paths.",
-      techStack: ["Streamlit", "Supabase", "OpenAI API", "LangChain"],
-      role: "Backend integrator and prompt engineer",
-      highlights: ["Intelligent resume parsing", "Job-role matching logic", "Personalized recommendations"],
+      type: "Professional Document Platform",
+      description: "A web-based platform designed to help users create professional career documents efficiently. Features modular templates, responsive design for accessibility across all devices, and visual consistency to ensure professional and polished documents.",
+      techStack: ["React", "TypeScript", "Tailwind CSS", "Lovable AI"],
+      role: "Frontend developer and UX designer",
+      highlights: ["Modular customizable templates", "Responsive cross-device design", "User-centric intuitive layout"],
       github: "https://github.com/Sanelise01/career-canvas",
       demo: "https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8",
       gradient: "from-purple-500 to-pink-500"
