@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, ExternalLink, Play } from 'lucide-react';
 
@@ -27,13 +26,12 @@ const Projects = () => {
       gradient: "from-purple-500 to-pink-500"
     },
     {
-      title: "Flowise AI Career Chatbot",
-      type: "No-Code AI Chatbot",
-      description: "Built with Flowise and OpenAI to provide interactive career advice using a vector search-powered knowledge base.",
-      techStack: ["Flowise", "Supabase", "OpenAI API"],
-      role: "Bot builder and knowledge base creator",
-      highlights: ["Vector search integration", "Interactive Q&A", "Career resource embedding"],
-      github: "https://github.com/Sanelise01/flowise-career-bot",
+      title: "CreatiVerseAI",
+      type: "Creative Writing Content Generator",
+      description: "A next-generation AI-driven creative writing tool designed to assist users in generating high-quality poems, stories, and literary prompts across a variety of styles, tones, and genres. Powered by Groq API and LLaMA 3.3 70B Versatile model for blazing-fast inference and rich, human-like text generation.",
+      techStack: ["Groq API", "LLaMA 3.3", "Python", "Streamlit"],
+      role: "AI Engineer and Prompt Designer",
+      highlights: ["Multi-genre content generation", "LLaMA 3.3 integration", "Fast inference optimization"],
       demo: "https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299",
       gradient: "from-orange-500 to-red-500"
     },
@@ -44,7 +42,6 @@ const Projects = () => {
       techStack: ["Botpress", "NLP", "Conversation Design"],
       role: "Flow developer and content designer",
       highlights: ["Multilingual support", "Smart conversation flows", "Guided interaction logic"],
-      github: "https://github.com/Sanelise01/botpress-career-bot",
       demo: "https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json",
       gradient: "from-indigo-500 to-purple-500"
     },
