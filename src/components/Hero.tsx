@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowDown, Download, Camera, FileText } from 'lucide-react';
+import { ArrowDown, Camera } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -64,55 +64,9 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* CV Download Section */}
-          <div className="flex justify-center mb-12">
-            <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-6 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#0D47A1' }}>
-                  <FileText size={24} className="text-white" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold" style={{ color: '#333333' }}>Professional CV</h3>
-                  <p className="text-sm" style={{ color: '#666666' }}>Download my latest resume</p>
-                </div>
-                <a
-                  href="/cv.pdf"
-                  download="Sanelise_Matanzima_CV.pdf"
-                  className="inline-flex items-center px-6 py-3 text-white rounded-xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
-                  style={{ backgroundColor: '#0D47A1' }}
-                >
-                  <Download size={18} className="mr-2" />
-                  Download CV
-                </a>
-              </div>
-            </div>
-          </div>
-
           {/* Professional Cards Section */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-1 gap-8 mb-16 max-w-md mx-auto">
             
-            {/* Resume Card */}
-            <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="text-center space-y-6">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto" style={{ backgroundColor: '#0D47A1' }}>
-                  <span className="text-2xl">📄</span>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2" style={{ color: '#333333' }}>Professional Resume</h3>
-                  <p className="mb-6" style={{ color: '#333333' }}>Download my comprehensive CV showcasing experience and skills</p>
-                </div>
-                <a
-                  href="/cv.pdf"
-                  download="Sanelise_Matanzima_Resume.pdf"
-                  className="inline-flex items-center px-8 py-4 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
-                  style={{ backgroundColor: '#0D47A1' }}
-                >
-                  <Download size={20} className="mr-3" />
-                  Download Resume
-                </a>
-              </div>
-            </div>
-
             {/* Quick Contact Card */}
             <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="text-center space-y-6">
