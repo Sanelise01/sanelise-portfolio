@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowDown, Camera, Download, FileText } from 'lucide-react';
 
@@ -77,7 +78,7 @@ const Hero = () => {
               {/* Download Button */}
               <div className="text-center">
                 <a
-                  href="/lovable-uploads/dd85eef8-e21e-4fa7-8801-6e115e904b83.png"
+                  href="/SmartResume.pdf"
                   download="Sanelise_Matanzima_Resume.pdf"
                   className="inline-flex items-center px-8 py-4 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
                   style={{ backgroundColor: '#0D47A1' }}
