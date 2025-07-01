@@ -71,16 +71,7 @@ const Hero = () => {
                   <FileText size={28} className="text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-2" style={{ color: '#333333' }}>Professional Resume</h3>
-                <p className="text-lg" style={{ color: '#666666' }}>View and download my comprehensive CV</p>
-              </div>
-
-              {/* Resume Preview */}
-              <div className="bg-gray-50 rounded-2xl p-4 mb-6">
-                <img
-                  src="/lovable-uploads/dd85eef8-e21e-4fa7-8801-6e115e904b83.png"
-                  alt="Sanelise Matanzima Resume"
-                  className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
-                />
+                <p className="text-lg" style={{ color: '#666666' }}>Download my comprehensive CV</p>
               </div>
 
               {/* Download Button */}
