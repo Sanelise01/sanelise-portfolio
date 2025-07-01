@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ArrowDown, Camera } from 'lucide-react';
+import { ArrowDown, Camera, Download, FileText } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -60,6 +59,41 @@ const Hero = () => {
                   A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. 
                   Dedicated to building ethical, human-centered solutions through intelligent design.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CV Download Section */}
+          <div className="mb-16">
+            <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-8 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2 max-w-4xl mx-auto">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#0D47A1' }}>
+                  <FileText size={28} className="text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: '#333333' }}>Professional Resume</h3>
+                <p className="text-lg" style={{ color: '#666666' }}>View and download my comprehensive CV</p>
+              </div>
+
+              {/* Resume Preview */}
+              <div className="bg-gray-50 rounded-2xl p-4 mb-6">
+                <img
+                  src="/lovable-uploads/dd85eef8-e21e-4fa7-8801-6e115e904b83.png"
+                  alt="Sanelise Matanzima Resume"
+                  className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+                />
+              </div>
+
+              {/* Download Button */}
+              <div className="text-center">
+                <a
+                  href="/lovable-uploads/dd85eef8-e21e-4fa7-8801-6e115e904b83.png"
+                  download="Sanelise_Matanzima_Resume.pdf"
+                  className="inline-flex items-center px-8 py-4 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 text-lg"
+                  style={{ backgroundColor: '#0D47A1' }}
+                >
+                  <Download size={20} className="mr-3" />
+                  Download Resume
+                </a>
               </div>
             </div>
           </div>
