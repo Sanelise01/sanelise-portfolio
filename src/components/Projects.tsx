@@ -10,7 +10,7 @@ const Projects = () => {
       techStack: ["Python", "Pandas", "Scikit-learn", "Plotly"],
       role: "Lead developer and documentation author",
       highlights: ["Automated fairness audits", "Visual evaluation dashboards", "Bias mitigation insights"],
-      github: "https://github.com/Sanelise01/fairness-unveiled",
+      github: "https://github.com/Sanelise01/fairness-unveiled-insights",
       demo: "https://lovable.dev/projects/64f0b266-2177-4e9a-a88d-168e551e5d8a",
       gradient: "from-blue-500 to-cyan-500"
     },
@@ -21,7 +21,7 @@ const Projects = () => {
       techStack: ["React", "TypeScript", "Tailwind CSS", "Lovable AI"],
       role: "Frontend developer and UX designer",
       highlights: ["Modular customizable templates", "Responsive cross-device design", "User-centric intuitive layout"],
-      github: "https://github.com/Sanelise01/career-canvas",
+      github: "https://github.com/Sanelise01/career-canvas-smart-build",
       demo: "https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8",
       gradient: "from-purple-500 to-pink-500"
     },
