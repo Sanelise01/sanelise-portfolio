@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-2">Sanelise Matanzima</h3>
           <p className="text-gray-400 mb-4">
-            Psychology Graduate & AI/ML Practitioner
+            Psychology Graduate & Emerging AI Innovator
           </p>
           <p className="text-gray-500 text-sm">
-            Building ethical, human-centered AI solutions • © 2024
+            Building ethical, human-centered AI solutions • © 2025
           </p>
         </div>
       </div>
