@@ -1,16 +1,17 @@
+
 import React from 'react';
 import { Github, ExternalLink, Play } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Fairness Unveiled",
+      title: "Fairness Audit Wizard",
       type: "AI Fairness Analysis Tool",
       description: "An analytical tool to assess and visualize bias in ML models using ROUGE metrics. Delivers interactive dashboards for transparent evaluation and includes bias mitigation insights.",
       techStack: ["Python", "Pandas", "Scikit-learn", "Plotly"],
       highlights: ["Automated fairness audits", "Visual evaluation dashboards", "Bias mitigation insights"],
-      github: "https://github.com/Sanelise01/fairness-unveiled-insights",
-      demo: "https://lovable.dev/projects/64f0b266-2177-4e9a-a88d-168e551e5d8a",
+      github: "https://github.com/Sanelise01/fairness-audit-wizard",
+      demo: "https://lovable.dev/projects/58f62fa0-cadc-42b7-9d05-3732e176e4ab",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
