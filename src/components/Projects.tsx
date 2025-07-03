@@ -8,11 +8,8 @@ const Projects = () => {
       title: "Fairness Unveiled",
       type: "AI Fairness Analysis Tool",
       description: "An analytical tool to assess and visualize bias in ML models using ROUGE metrics. Delivers interactive dashboards for transparent evaluation and includes bias mitigation insights.",
-      purpose: "Developed to address the critical need for transparent and ethical AI systems by providing comprehensive bias detection and analysis capabilities for machine learning models.",
       techStack: ["Python", "Pandas", "Scikit-learn", "Plotly"],
-      role: "Lead developer and documentation author",
       highlights: ["Automated fairness audits", "Visual evaluation dashboards", "Bias mitigation insights"],
-      learnings: ["Advanced understanding of algorithmic bias detection", "Experience with statistical fairness metrics", "Skills in data visualization for complex ML insights", "Knowledge of ethical AI development practices"],
       github: "https://github.com/Sanelise01/fairness-unveiled-insights",
       demo: "https://lovable.dev/projects/64f0b266-2177-4e9a-a88d-168e551e5d8a",
       gradient: "from-blue-500 to-cyan-500"
@@ -21,11 +18,8 @@ const Projects = () => {
       title: "Career Canvas Smart Build",
       type: "Professional Document Platform",
       description: "A web-based platform designed to help users create professional career documents efficiently. Features modular templates, responsive design for accessibility across all devices, and visual consistency to ensure professional and polished documents.",
-      purpose: "Created to streamline the career document creation process, making professional resume and portfolio building accessible and efficient for job seekers.",
       techStack: ["React", "TypeScript", "Tailwind CSS", "Lovable AI"],
-      role: "Frontend developer and UX designer",
       highlights: ["Modular customizable templates", "Responsive cross-device design", "User-centric intuitive layout"],
-      learnings: ["Modern React development with TypeScript", "Advanced Tailwind CSS styling techniques", "User experience design principles", "Responsive web design best practices"],
       github: "https://github.com/Sanelise01/career-canvas-smart-build",
       demo: "https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8",
       gradient: "from-purple-500 to-pink-500"
@@ -34,11 +28,8 @@ const Projects = () => {
       title: "CreatiVerseAI",
       type: "Creative Writing Content Generator",
       description: "A next-generation AI-driven creative writing tool designed to assist users in generating high-quality poems, stories, and literary prompts across a variety of styles, tones, and genres. Powered by Groq API and LLaMA 3.3 70B Versatile model for blazing-fast inference and rich, human-like text generation.",
-      purpose: "Built to democratize creative writing by providing AI-powered assistance for writers, educators, and content creators seeking inspiration and quality content generation.",
       techStack: ["Groq API", "LLaMA 3.3", "Python", "Streamlit"],
-      role: "AI Engineer and Prompt Designer",
       highlights: ["Multi-genre content generation", "LLaMA 3.3 integration", "Fast inference optimization"],
-      learnings: ["Large Language Model integration and optimization", "Advanced prompt engineering techniques", "API development and management", "Streamlit application deployment"],
       demo: "https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299",
       gradient: "from-orange-500 to-red-500"
     },
@@ -46,11 +37,8 @@ const Projects = () => {
       title: "Botpress Career Guidance Bot",
       type: "Multilingual AI Assistant",
       description: "An AI chatbot built with Botpress to deliver multilingual career guidance and upskilling suggestions through smart conversation flows.",
-      purpose: "Designed to provide accessible career guidance and professional development resources through intelligent conversational AI, supporting users in multiple languages.",
       techStack: ["Botpress", "NLP", "Conversation Design"],
-      role: "Flow developer and content designer",
       highlights: ["Multilingual support", "Smart conversation flows", "Guided interaction logic"],
-      learnings: ["Conversational AI design principles", "Multi-language bot development", "User flow optimization", "Natural language processing applications"],
       demo: "https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json",
       gradient: "from-indigo-500 to-purple-500"
     },
@@ -58,11 +46,8 @@ const Projects = () => {
       title: "Machine Daily Check Prototype",
       type: "UX/UI Prototype",
       description: "A mobile-friendly prototype designed to streamline machine maintenance checks in industrial settings.",
-      purpose: "Developed to improve efficiency and accuracy in industrial maintenance workflows by creating an intuitive digital solution for daily equipment inspections.",
       techStack: ["Figma", "UX Design", "Prototyping"],
-      role: "UX Designer",
       highlights: ["Tablet-first interface", "Intuitive form flow", "Industrial workflow optimization"],
-      learnings: ["User-centered design methodology", "Industrial UX considerations", "Prototype development and testing", "Mobile-first design principles"],
       figma: "https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3",
       gradient: "from-green-500 to-teal-500"
     }
@@ -99,13 +84,6 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-2">Project Purpose:</h4>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {project.purpose}
-                  </p>
-                </div>
-
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   {project.description}
                 </p>
@@ -124,30 +102,13 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-1">Role & Responsibilities:</h4>
-                  <p className="text-sm text-gray-600">{project.role}</p>
-                </div>
-
-                <div className="mb-4">
+                <div className="mb-6">
                   <h4 className="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
                     {project.highlights.map((highlight, highlightIndex) => (
                       <li key={highlightIndex} className="flex items-center">
                         <div className="w-1 h-1 bg-blue-600 rounded-full mr-2"></div>
                         {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-2">Key Learnings & Outcomes:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    {project.learnings.map((learning, learningIndex) => (
-                      <li key={learningIndex} className="flex items-start">
-                        <div className="w-1 h-1 bg-green-600 rounded-full mr-2 mt-2"></div>
-                        {learning}
                       </li>
                     ))}
                   </ul>
