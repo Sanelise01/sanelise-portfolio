@@ -5,14 +5,14 @@ import { Github, ExternalLink, Play } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Fairness Audit Wizard",
-      type: "AI Fairness Analysis Tool",
-      description: "An analytical tool to assess and visualize bias in ML models using ROUGE metrics. Delivers interactive dashboards for transparent evaluation and includes bias mitigation insights.",
-      techStack: ["Python", "Pandas", "Scikit-learn", "Plotly"],
-      highlights: ["Automated fairness audits", "Visual evaluation dashboards", "Bias mitigation insights"],
-      github: "https://github.com/Sanelise01/fairness-audit-wizard",
-      demo: "https://lovable.dev/projects/58f62fa0-cadc-42b7-9d05-3732e176e4ab",
-      gradient: "from-blue-500 to-cyan-500"
+      title: "Botpress Career Guidance Bot",
+      type: "Multilingual AI Assistant",
+      description: "An AI chatbot built with Botpress to deliver multilingual career guidance and upskilling suggestions through smart conversation flows.",
+      techStack: ["Botpress", "NLP", "Conversation Design"],
+      highlights: ["Multilingual support", "Smart conversation flows", "Guided interaction logic"],
+      github: "https://github.com/Sanelise01/botpress-career-guidance",
+      demo: "https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json",
+      gradient: "from-indigo-500 to-purple-500"
     },
     {
       title: "Career Canvas Smart Build",
@@ -35,14 +35,14 @@ const Projects = () => {
       gradient: "from-orange-500 to-red-500"
     },
     {
-      title: "Botpress Career Guidance Bot",
-      type: "Multilingual AI Assistant",
-      description: "An AI chatbot built with Botpress to deliver multilingual career guidance and upskilling suggestions through smart conversation flows.",
-      techStack: ["Botpress", "NLP", "Conversation Design"],
-      highlights: ["Multilingual support", "Smart conversation flows", "Guided interaction logic"],
-      github: "https://github.com/Sanelise01/botpress-career-guidance",
-      demo: "https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json",
-      gradient: "from-indigo-500 to-purple-500"
+      title: "Fairness Audit Wizard",
+      type: "AI Fairness Analysis Tool",
+      description: "An analytical tool to assess and visualize bias in ML models using ROUGE metrics. Delivers interactive dashboards for transparent evaluation and includes bias mitigation insights.",
+      techStack: ["Python", "Pandas", "Scikit-learn", "Plotly"],
+      highlights: ["Automated fairness audits", "Visual evaluation dashboards", "Bias mitigation insights"],
+      github: "https://github.com/Sanelise01/fairness-audit-wizard",
+      demo: "https://lovable.dev/projects/58f62fa0-cadc-42b7-9d05-3732e176e4ab",
+      gradient: "from-blue-500 to-cyan-500"
     },
     {
       title: "Machine Daily Check Prototype",
