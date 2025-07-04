@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, ExternalLink, Play } from 'lucide-react';
 
@@ -30,7 +29,6 @@ const Projects = () => {
       description: "A next-generation AI-driven creative writing tool designed to assist users in generating high-quality poems, stories, and literary prompts across a variety of styles, tones, and genres. Powered by Groq API and LLaMA 3.3 70B Versatile model for blazing-fast inference and rich, human-like text generation.",
       techStack: ["Groq API", "LLaMA 3.3", "Python", "Streamlit"],
       highlights: ["Multi-genre content generation", "LLaMA 3.3 integration", "Fast inference optimization"],
-      github: "https://github.com/Sanelise01/creativerse-ai",
       demo: "https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299",
       gradient: "from-orange-500 to-red-500"
     },
@@ -51,7 +49,6 @@ const Projects = () => {
       techStack: ["Figma", "UX Design", "Prototyping"],
       highlights: ["Tablet-first interface", "Intuitive form flow", "Industrial workflow optimization"],
       figma: "https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3",
-      github: "https://github.com/Sanelise01/machine-daily-check-prototype",
       gradient: "from-green-500 to-teal-500"
     }
   ];
