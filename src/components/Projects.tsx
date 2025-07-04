@@ -5,11 +5,11 @@ import { Github, ExternalLink, Play } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Botpress Career Guidance Bot",
-      type: "Multilingual AI Assistant",
-      description: "An AI chatbot built with Botpress to deliver multilingual career guidance and upskilling suggestions through smart conversation flows.",
+      title: "IT Master Chatbot (Botpress)",
+      type: "AI Learning Companion",
+      description: "A learning companion built for AI beginners. It simplifies complex AI concepts through conversational learning, helping users understand topics like machine learning, neural networks, and ethical AI. The chatbot supports follow-up questions, offers custom learning paths, and connects learners with educational resources.",
       techStack: ["Botpress", "NLP", "Conversation Design"],
-      highlights: ["Multilingual support", "Smart conversation flows", "Guided interaction logic"],
+      highlights: ["Conversational AI learning", "Custom learning paths", "Educational resource connections"],
       github: "https://github.com/Sanelise01/botpress-career-guidance",
       demo: "https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json",
       gradient: "from-indigo-500 to-purple-500"
