@@ -88,66 +88,67 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Enhanced CV Download Section */}
+          {/* Enhanced CV Download and Connect Section */}
           <div className="mb-20">
-            <div className="relative group max-w-5xl mx-auto">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 border border-white/50 shadow-2xl">
-                <div className="text-center mb-8">
-                  <div className="relative inline-flex items-center justify-center mb-6">
-                    <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-                      <FileText size={32} className="text-white" />
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {/* Professional Resume */}
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 border border-white/50 shadow-2xl">
+                  <div className="text-center mb-8">
+                    <div className="relative inline-flex items-center justify-center mb-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                        <FileText size={32} className="text-white" />
+                      </div>
+                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full flex items-center justify-center">
+                        <Download size={12} className="text-white" />
+                      </div>
                     </div>
-                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full flex items-center justify-center">
-                      <Download size={12} className="text-white" />
-                    </div>
+                    <h3 className="text-3xl font-bold mb-3 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                      Professional Resume
+                    </h3>
+                    <p className="text-lg text-gray-600 font-medium">Download my comprehensive CV</p>
                   </div>
-                  <h3 className="text-3xl font-bold mb-3 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-                    Professional Resume
-                  </h3>
-                  <p className="text-lg text-gray-600 font-medium">Download my comprehensive CV</p>
-                </div>
 
-                <div className="text-center">
-                  <a
-                    href="/SmartResume.pdf"
-                    download="Sanelise_Matanzima_Resume.pdf"
-                    className="group inline-flex items-center px-10 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 border border-white/20"
-                  >
-                    <Download size={24} className="mr-3 group-hover:animate-bounce" />
-                    <span>Download Resume</span>
-                  </a>
+                  <div className="text-center">
+                    <a
+                      href="/SmartResume.pdf"
+                      download="Sanelise_Matanzima_Resume.pdf"
+                      className="group inline-flex items-center px-10 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 border border-white/20"
+                    >
+                      <Download size={24} className="mr-3 group-hover:animate-bounce" />
+                      <span>Download Resume</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          {/* Enhanced Professional Cards */}
-          <div className="grid md:grid-cols-1 gap-8 mb-20 max-w-md mx-auto">
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 border border-white/50 shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:-translate-y-2">
-                <div className="text-center space-y-8">
-                  <div className="relative inline-flex items-center justify-center">
-                    <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg">
-                      <span className="text-3xl">💬</span>
+              {/* Let's Connect */}
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative bg-white/95 backdrop-blur-xl rounded-3xl p-10 border border-white/50 shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:-translate-y-2">
+                  <div className="text-center space-y-8">
+                    <div className="relative inline-flex items-center justify-center">
+                      <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg">
+                        <span className="text-3xl">💬</span>
+                      </div>
+                      <div className="absolute -top-1 -right-1 w-6 h-6 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-pulse"></div>
                     </div>
-                    <div className="absolute -top-1 -right-1 w-6 h-6 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-pulse"></div>
+                    <div>
+                      <h3 className="text-3xl font-bold mb-3 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                        Let's Connect
+                      </h3>
+                      <p className="text-gray-700 font-medium text-lg mb-8">
+                        Ready to discuss opportunities and collaborations
+                      </p>
+                    </div>
+                    <a
+                      href="#contact"
+                      className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
+                    >
+                      Get In Touch
+                    </a>
                   </div>
-                  <div>
-                    <h3 className="text-3xl font-bold mb-3 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-                      Let's Connect
-                    </h3>
-                    <p className="text-gray-700 font-medium text-lg mb-8">
-                      Ready to discuss opportunities and collaborations
-                    </p>
-                  </div>
-                  <a
-                    href="#contact"
-                    className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
-                  >
-                    Get In Touch
-                  </a>
                 </div>
               </div>
             </div>
