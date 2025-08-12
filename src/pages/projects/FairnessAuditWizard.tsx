@@ -14,7 +14,13 @@ const FairnessAuditWizard = () => {
         </Link>
 
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="h-4 bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+          <div className="h-64 bg-gradient-to-r from-blue-500 to-cyan-500 relative overflow-hidden">
+            <img 
+              src="/lovable-uploads/a179fab0-5017-4a86-a9eb-89c3b62faf09.png" 
+              alt="Fairness Audit Wizard with analytics dashboards" 
+              className="w-full h-full object-cover"
+            />
+          </div>
           
           <div className="p-8">
             <div className="mb-8">

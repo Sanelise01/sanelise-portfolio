@@ -14,7 +14,13 @@ const CreatiVerseAI = () => {
         </Link>
 
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="h-4 bg-gradient-to-r from-orange-500 to-red-500"></div>
+          <div className="h-64 bg-gradient-to-r from-orange-500 to-red-500 relative overflow-hidden">
+            <img 
+              src="/lovable-uploads/20eac075-69af-4d2e-b73a-da8de5a85d98.png" 
+              alt="CreatiVerseAI creative writing tool with knowledge tree" 
+              className="w-full h-full object-cover"
+            />
+          </div>
           
           <div className="p-8">
             <div className="mb-8">

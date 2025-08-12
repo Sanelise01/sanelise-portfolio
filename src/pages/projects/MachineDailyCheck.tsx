@@ -14,7 +14,13 @@ const MachineDailyCheck = () => {
         </Link>
 
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="h-4 bg-gradient-to-r from-green-500 to-teal-500"></div>
+          <div className="h-64 bg-gradient-to-r from-green-500 to-teal-500 relative overflow-hidden">
+            <img 
+              src="/lovable-uploads/0148e191-e000-4539-b557-43cce3841a03.png" 
+              alt="Machine Daily Check tablet interface" 
+              className="w-full h-full object-cover"
+            />
+          </div>
           
           <div className="p-8">
             <div className="mb-8">

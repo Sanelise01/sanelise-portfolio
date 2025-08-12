@@ -14,7 +14,13 @@ const CareerCanvas = () => {
         </Link>
 
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="h-4 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+          <div className="h-64 bg-gradient-to-r from-purple-500 to-pink-500 relative overflow-hidden">
+            <img 
+              src="/lovable-uploads/a0986c25-1bd2-4e26-9247-042ab7423016.png" 
+              alt="Career Canvas Smart Build platform with floating documents" 
+              className="w-full h-full object-cover"
+            />
+          </div>
           
           <div className="p-8">
             <div className="mb-8">

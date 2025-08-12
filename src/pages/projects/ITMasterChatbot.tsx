@@ -14,7 +14,13 @@ const ITMasterChatbot = () => {
         </Link>
 
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="h-4 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+          <div className="h-64 bg-gradient-to-r from-indigo-500 to-purple-500 relative overflow-hidden">
+            <img 
+              src="/lovable-uploads/0f32de04-8a6a-4d4a-8258-e2eec30d3f9b.png" 
+              alt="IT Master Chatbot with Botpress interface" 
+              className="w-full h-full object-cover"
+            />
+          </div>
           
           <div className="p-8">
             <div className="mb-8">
