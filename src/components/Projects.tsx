@@ -13,7 +13,9 @@ const Projects = () => {
       github: "https://github.com/Sanelise01/botpress-career-guidance",
       demo: "https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/16/10/20250516102421-ZCIOC18F.json",
       gradient: "from-indigo-500 to-purple-500",
-      profilePath: "/projects/it-master-chatbot"
+      profilePath: "/projects/it-master-chatbot",
+      image: "/lovable-uploads/0f32de04-8a6a-4d4a-8258-e2eec30d3f9b.png",
+      imageAlt: "IT Master Chatbot with Botpress interface"
     },
     {
       title: "Career Canvas Smart Build",
@@ -24,7 +26,9 @@ const Projects = () => {
       github: "https://github.com/Sanelise01/career-canvas-smart-build",
       demo: "https://lovable.dev/projects/2fdf0ff1-250f-4b5c-9e69-794e521563f8",
       gradient: "from-purple-500 to-pink-500",
-      profilePath: "/projects/career-canvas"
+      profilePath: "/projects/career-canvas",
+      image: "/lovable-uploads/a0986c25-1bd2-4e26-9247-042ab7423016.png",
+      imageAlt: "Career Canvas Smart Build platform with floating documents"
     },
     {
       title: "CreatiVerseAI",
@@ -34,7 +38,9 @@ const Projects = () => {
       highlights: ["Multi-genre content generation", "LLaMA 3.3 integration", "Fast inference optimization"],
       demo: "https://cloud.flowiseai.com/chatbot/d4baf847-e9e1-4de2-9a22-c910eec44299",
       gradient: "from-orange-500 to-red-500",
-      profilePath: "/projects/creativerseai"
+      profilePath: "/projects/creativerseai",
+      image: "/lovable-uploads/20eac075-69af-4d2e-b73a-da8de5a85d98.png",
+      imageAlt: "CreatiVerseAI creative writing tool with knowledge tree"
     },
     {
       title: "Fairness Audit Wizard",
@@ -45,7 +51,9 @@ const Projects = () => {
       github: "https://github.com/Sanelise01/fairness-audit-wizard",
       demo: "https://lovable.dev/projects/58f62fa0-cadc-42b7-9d05-3732e176e4ab",
       gradient: "from-blue-500 to-cyan-500",
-      profilePath: "/projects/fairness-audit-wizard"
+      profilePath: "/projects/fairness-audit-wizard",
+      image: "/lovable-uploads/a179fab0-5017-4a86-a9eb-89c3b62faf09.png",
+      imageAlt: "Fairness Audit Wizard with analytics dashboards"
     },
     {
       title: "Machine Daily Check Prototype",
@@ -55,7 +63,9 @@ const Projects = () => {
       highlights: ["Tablet-first interface", "Intuitive form flow", "Industrial workflow optimization"],
       figma: "https://www.figma.com/proto/4l9za9IJtBn06GS4tPwqfj/Machine-Daily-Check_Prototype?node-id=13-3&p=f&t=MxOoZKrUt6grOVLa-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3",
       gradient: "from-green-500 to-teal-500",
-      profilePath: "/projects/machine-daily-check"
+      profilePath: "/projects/machine-daily-check",
+      image: "/lovable-uploads/0148e191-e000-4539-b557-43cce3841a03.png",
+      imageAlt: "Machine Daily Check tablet interface"
     }
   ];
 
@@ -76,7 +86,14 @@ const Projects = () => {
               key={index}
               className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
             >
-              <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.imageAlt}
+                  className="w-full h-full object-cover"
+                />
+                <div className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-20`}></div>
+              </div>
               
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">
