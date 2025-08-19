@@ -12,7 +12,7 @@ const Hero = () => {
           backgroundImage: `url('/lovable-uploads/652bf501-b249-441d-8b63-1f3453fed478.png')`
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
       {/* Main Content */}
@@ -25,23 +25,23 @@ const Hero = () => {
             <div className="space-y-8">
               <div className="relative">
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
-                  <span className="block text-white drop-shadow-2xl">
+                  <span className="block text-white drop-shadow-2xl text-shadow-lg">
                     Sanelise
                   </span>
-                  <span className="block text-white drop-shadow-2xl">
+                  <span className="block text-white drop-shadow-2xl text-shadow-lg">
                     Matanzima
                   </span>
                 </h1>
               </div>
               
               <div className="space-y-6">
-                <div className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
+                <div className="inline-flex items-center px-6 py-3 bg-black/40 backdrop-blur-md rounded-full border border-white/30">
                   <p className="text-xl md:text-2xl font-semibold text-white">
                     IT Support Specialist | Psychology Graduate | Emerging AI Innovator
                   </p>
                 </div>
                 
-                <p className="text-lg max-w-4xl mx-auto leading-relaxed text-white/90 font-medium">
+                <p className="text-lg max-w-4xl mx-auto leading-relaxed text-white font-medium drop-shadow-lg">
                   A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. 
                   Dedicated to building ethical, human-centered solutions through intelligent design.
                 </p>
@@ -55,7 +55,7 @@ const Hero = () => {
               {/* Professional Resume */}
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-10 border border-white/20 shadow-2xl">
+                <div className="relative bg-black/30 backdrop-blur-xl rounded-3xl p-10 border border-white/30 shadow-2xl">
                   <div className="text-center mb-8">
                     <div className="relative inline-flex items-center justify-center mb-6">
                       <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
@@ -87,7 +87,7 @@ const Hero = () => {
               {/* Let's Connect */}
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-10 border border-white/20 shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:-translate-y-2">
+                <div className="relative bg-black/30 backdrop-blur-xl rounded-3xl p-10 border border-white/30 shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:-translate-y-2">
                   <div className="text-center space-y-8">
                     <div className="relative inline-flex items-center justify-center">
                       <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg">
