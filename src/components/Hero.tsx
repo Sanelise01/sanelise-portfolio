@@ -9,10 +9,10 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/lovable-uploads/652bf501-b249-441d-8b63-1f3453fed478.png')`
+          backgroundImage: `url('/lovable-uploads/c30d9adb-3b41-4806-a7dd-9854ed7f4afc.png')`
         }}
       >
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Main Content */}
@@ -21,6 +21,22 @@ const Hero = () => {
           
           {/* Profile Section */}
           <div className="text-center mb-20">
+            {/* Profile Picture */}
+            <div className="mb-12">
+              <div className="relative inline-block">
+                <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
+                  <img 
+                    src="/lovable-uploads/c30d9adb-3b41-4806-a7dd-9854ed7f4afc.png" 
+                    alt="Sanelise Matanzima"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                  <Sparkles size={20} className="text-white" />
+                </div>
+              </div>
+            </div>
+
             {/* Enhanced Name and Title */}
             <div className="space-y-8">
               <div className="relative">
