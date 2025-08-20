@@ -17,11 +17,8 @@ const Hero = () => {
               <div className="space-y-8">
                 <div className="relative">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                    <span className="block bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent drop-shadow-sm">
-                      Sanelise
-                    </span>
-                    <span className="block bg-gradient-to-r from-emerald-600 via-cyan-600 to-purple-600 bg-clip-text text-transparent drop-shadow-sm">
-                      Matanzima
+                    <span className="block bg-gradient-to-r from-purple-600 via-pink-600 to-emerald-600 bg-clip-text text-transparent drop-shadow-sm">
+                      Sanelise Matanzima
                     </span>
                   </h1>
                 </div>
