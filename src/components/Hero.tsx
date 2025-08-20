@@ -5,19 +5,19 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen relative overflow-hidden bg-background">
       {/* Main Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-7xl mx-auto">
           
           {/* Split Layout */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh]">
             
             {/* Left Side - Text Content */}
-            <div className="space-y-8 text-center lg:text-left">
+            <div className="flex flex-col justify-center space-y-8 text-center lg:text-left px-4">
               {/* Enhanced Name and Title */}
               <div className="space-y-8">
-                <div className="relative w-full max-w-2xl mx-auto lg:mx-0">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight break-words">
-                    <span className="inline-block w-full bg-gradient-to-r from-purple-600 via-pink-600 to-emerald-600 bg-clip-text text-transparent drop-shadow-sm">
+                <div className="relative w-full">
+                  <h1 className="font-bold leading-tight text-center lg:text-left" style={{ fontSize: 'clamp(2rem, 8vw, 4rem)' }}>
+                    <span className="inline bg-gradient-to-r from-purple-600 via-pink-600 to-emerald-600 bg-clip-text text-transparent drop-shadow-sm">
                       Sanelise Matanzima
                     </span>
                   </h1>
