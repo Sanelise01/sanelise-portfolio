@@ -17,25 +17,25 @@ const Hero = () => {
               <div className="space-y-8">
                 <div className="relative">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                    <span className="block text-foreground">
+                    <span className="block bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent drop-shadow-sm">
                       Sanelise
                     </span>
-                    <span className="block text-foreground">
+                    <span className="block bg-gradient-to-r from-emerald-600 via-cyan-600 to-purple-600 bg-clip-text text-transparent drop-shadow-sm">
                       Matanzima
                     </span>
                   </h1>
                 </div>
                 
                 <div className="space-y-6">
-                  <div className="inline-flex items-center px-6 py-3 bg-primary/10 backdrop-blur-md rounded-full border border-primary/20">
-                    <p className="text-lg md:text-xl font-semibold text-foreground">
+                  <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 backdrop-blur-md rounded-full border border-purple-300/30 shadow-lg">
+                    <p className="text-lg md:text-xl font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                       IT Support Specialist | Psychology Graduate | Emerging AI Innovator
                     </p>
                   </div>
                   
-                  <p className="text-base max-w-xl mx-auto lg:mx-0 leading-relaxed text-muted-foreground font-medium">
-                    A dynamic psychology graduate passionate about bridging human understanding with emerging technologies. 
-                    Dedicated to building ethical, human-centered solutions through intelligent design.
+                  <p className="text-base max-w-xl mx-auto lg:mx-0 leading-relaxed text-slate-700 dark:text-slate-300 font-medium drop-shadow-sm">
+                    A dynamic psychology graduate passionate about <span className="text-emerald-600 font-semibold">bridging human understanding</span> with <span className="text-blue-600 font-semibold">emerging technologies</span>. 
+                    Dedicated to building <span className="text-purple-600 font-semibold">ethical, human-centered solutions</span> through intelligent design.
                   </p>
                 </div>
               </div>
@@ -44,7 +44,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
                 <a
                   href="#projects"
-                  className="group px-8 py-4 bg-primary text-primary-foreground rounded-xl font-bold text-base shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                  className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl font-bold text-base shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 hover:from-purple-700 hover:to-blue-700"
                 >
                   <span className="group-hover:scale-105 transition-transform inline-block">
                     View My Projects
@@ -52,7 +52,7 @@ const Hero = () => {
                 </a>
                 <a
                   href="#about"
-                  className="group px-8 py-4 border-2 border-primary/30 text-foreground rounded-xl font-bold text-base hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 bg-background hover:bg-accent"
+                  className="group px-8 py-4 border-2 border-gradient-to-r from-emerald-500 to-cyan-500 bg-gradient-to-r from-emerald-50 to-cyan-50 dark:from-emerald-900/20 dark:to-cyan-900/20 text-emerald-700 dark:text-emerald-300 rounded-xl font-bold text-base hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 border-emerald-400 hover:bg-gradient-to-r hover:from-emerald-100 hover:to-cyan-100 dark:hover:from-emerald-800/30 dark:hover:to-cyan-800/30"
                 >
                   <span className="group-hover:scale-105 transition-transform inline-block">
                     Learn More About Me
@@ -65,7 +65,7 @@ const Hero = () => {
                 <a
                   href="/SmartResume.pdf"
                   download="Sanelise_Matanzima_Resume.pdf"
-                  className="group inline-flex items-center px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+                  className="group inline-flex items-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-medium shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 hover:from-indigo-700 hover:to-purple-700"
                 >
                   <Download size={20} className="mr-2 group-hover:animate-bounce" />
                   <span>Download Resume</span>
