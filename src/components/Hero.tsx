@@ -15,9 +15,9 @@ const Hero = () => {
             <div className="space-y-8 text-center lg:text-left">
               {/* Enhanced Name and Title */}
               <div className="space-y-8">
-                <div className="relative">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                    <span className="block bg-gradient-to-r from-purple-600 via-pink-600 to-emerald-600 bg-clip-text text-transparent drop-shadow-sm">
+                <div className="relative w-full max-w-2xl mx-auto lg:mx-0">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight break-words">
+                    <span className="inline-block w-full bg-gradient-to-r from-purple-600 via-pink-600 to-emerald-600 bg-clip-text text-transparent drop-shadow-sm">
                       Sanelise Matanzima
                     </span>
                   </h1>
